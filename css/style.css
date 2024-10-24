@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #F5EDD8;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    margin-left: 30px;
+}
+
+.icon {
+    width: 40px;
+    margin-right: 30px;
+}
+
+.principal {
+    background-color: #C6462E;
+    width: 100%;
+    height: 85dvh;
+    padding: 30px;
+}
+
+.container {
+    display: flex;
+    margin-top: 20px;
+    overflow-x: auto;
+    /* Permite rolagem horizontal */
+    scroll-snap-type: x mandatory;
+    /* Faz a rolagem "travar" nos cards */
+    gap: 10px;
+    height: 70dvh;
+}
+
+.card {
+    flex: 0 0 300px;
+    /* Largura fixa para os cards */
+    height: 150px;
+    background-color: #10100f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 10px;
+    scroll-snap-align: start;
+    /* Faz o card alinhar corretamente na rolagem */
+}
+
+.card img{
+    width: 250px;
+    height: 200px;
+}
+
+.baixo{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+table{
+    width: 100%;
+  }
+  td{
+    background-color: #c2c2c2;
+    border-collapse: collapse;
+  }
+  
+  th{
+    background-color: #242424;
+    color:white;
+  }
+  
+  form{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+  }
+  
+  input{
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #c2c2c2;
+  }
